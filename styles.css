@@ -1,6 +1,7 @@
 .profile-body {
 background-color: #202020;
 margin: 0;
+
 }
 
 .navbar {
@@ -23,40 +24,51 @@ padding: 0;
 
 }
 .container-profile {
+  height: 100vh;
   max-width: 1110px;
-  max-height: 100vp;
   background-color: #141414;
   margin: 0 auto;
   
 }
 .col-right {
   position: relative;
-  margin-left: 0px;
+  padding-left: 55px;
 
 }
 .container-edit {
   position: relative;
+  margin-left: 385px;
   max-width: 480px;
-  margin-left: 380px;
+  
   
 }
 .h1-profile {
-  font-size: 55px;
+  font-size: 52px;
   font-weight: 450;
   color: white;
   margin-top: 30px;
-  padding: 0;
+  margin-bottom: 3px;
+  padding-bottom: 0;
+  letter-spacing: 2px;
 }
 h5 {
-  color: #e0d8cc;
-  
+  color: #b9b7b3;
+  font-size: 16px;
 }
 
 .hr-profile {
-  border: 1px solid #575656;
-  
-
+  border: 1px solid #838181;
+  margin-top: 0;
+}
+.hr-profile-bottom {
+  border: 1px solid #838181;
+  margin-bottom: 0;
    }
+
+.hr-right {
+  border: 1px solid rgb(150, 149, 149);
+}
+
 .btn-student {
   width: 300px;
   height: 35px;
@@ -85,12 +97,74 @@ h5 {
     font-weight: bolder;
     background-color: #333333;
     border: none;
-    color: rgb(233, 229, 229);
-    padding: 4px 10px;
+    color: white;
+    padding: 6px 10px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+  }
+  .btn-edit {
+    width: 70px;
+    height: 30px;
+    background-color: #141414;
+    border: 2px solid rgb(75, 75, 75);
+    color: rgb(112, 107, 107);
+    border-radius: 1px;
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    margin-bottom: 10px;
   }
   .maturity-text {
     font-size: 13px;
     font-weight: 600;
-    color: rgb(189, 184, 184);
+    color: rgb(204, 201, 201);
     padding-top: 10px; 
+  }
+  .autoplay-text {
+    display: inline;
+    font-size: 13px;
+    color: whitesmoke;
+    padding-left: 3px;
+    ;
+  }
+  .checkbox {
+    width: 30px;
+    height: 30px;
+    color:rgb(2, 19, 19);
+    background-color: #141414;
+    display: inline;
+    opacity: 0.5;
+    border: 1px solid rgb(216, 15, 15);
+  }
+  .btn-save {
+    display: inline;
+    height: 37px;
+    width: 90px;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  .btn-cancel {
+    display: inline;
+    height: 37px;
+    width: 120px;
+    margin-right: 10px;
+    background-color: #141414;
+    color: rgb(112, 107, 107);
+    opacity: 0.9;
+    border: 2px solid rgb(75, 75, 75);
+  }
+  .btn-delete {
+    display: inline;
+    height: 37px;
+    width: 200px;
+    border: 2px solid rgb(75, 75, 75);
+    background-color: #141414;
+    color: rgb(112, 107, 107);
+    opacity: 0.9;
+  }
+  @media screen and (max-width: 1024px){
+    .container-edit {
+      margin: 0 auto;
+    }
   }
