@@ -1,0 +1,96 @@
+.profile-body {
+background-color: #202020;
+margin: 0;
+}
+
+.navbar {
+background-image: linear-gradient#060606,#131313;
+height: 70px;
+margin: 0;
+padding: 0;
+}
+
+.netflix-logo {
+  max-height: 43px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+}
+.strive-pic {
+  max-height: 105px;
+
+}
+.container-profile {
+  max-width: 1110px;
+  max-height: 100vp;
+  background-color: #141414;
+  margin: 0 auto;
+  
+}
+.col-right {
+  position: relative;
+  margin-left: 0px;
+
+}
+.container-edit {
+  position: relative;
+  max-width: 480px;
+  margin-left: 380px;
+  
+}
+.h1-profile {
+  font-size: 55px;
+  font-weight: 450;
+  color: white;
+  margin-top: 30px;
+  padding: 0;
+}
+h5 {
+  color: #e0d8cc;
+  
+}
+
+.hr-profile {
+  border: 1px solid #575656;
+  
+
+   }
+.btn-student {
+  width: 300px;
+  height: 35px;
+  
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  background-color: #666666;
+  color: white;
+  border: none;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  }
+  .btn-language {
+    background-color: #141414;
+    border-radius: 0;
+    border: 2px solid rgb(172, 170, 170);
+    text-align: left;
+    height: 25px;
+    width: 120px;
+    padding-left: 10px;
+    
+  }
+  .btn-maturity {
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #333333;
+    border: none;
+    color: rgb(233, 229, 229);
+    padding: 4px 10px;
+  }
+  .maturity-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(189, 184, 184);
+    padding-top: 10px; 
+  }
