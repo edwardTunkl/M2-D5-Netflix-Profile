@@ -54,6 +54,7 @@ padding: 0;
 h5 {
   color: #b9b7b3;
   font-size: 16px;
+  margin-bottom: 4px;
 }
 
 .hr-profile {
@@ -62,7 +63,8 @@ h5 {
 }
 .hr-profile-bottom {
   border: 1px solid #838181;
-  margin-bottom: 0;
+  margin-bottom: 3px;
+  margin-top: 28px;
    }
 
 .hr-right {
@@ -70,7 +72,7 @@ h5 {
 }
 
 .btn-student {
-  width: 300px;
+  width: 310px;
   height: 35px;
   
   top: 0px;
@@ -80,20 +82,24 @@ h5 {
   color: white;
   border: none;
   padding-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   }
   .btn-language {
+    font-size: 10px;
+    font-weight: 700;
     background-color: #141414;
     border-radius: 0;
     border: 2px solid rgb(172, 170, 170);
     text-align: left;
     height: 25px;
-    width: 120px;
+    width: 100px;
     padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 7px;
     
   }
   .btn-maturity {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bolder;
     background-color: #333333;
     border: none;
@@ -101,6 +107,8 @@ h5 {
     padding: 6px 10px;
     opacity: 0.9;
     letter-spacing: 1px;
+    margin-top: 10px;
+    width: 175px;
   }
   .btn-edit {
     width: 70px;
@@ -125,43 +133,50 @@ h5 {
     display: inline;
     font-size: 13px;
     color: whitesmoke;
-    padding-left: 3px;
+    padding-left: 3px;padding-bottom: 15px
     ;
   }
-  .checkbox {
-    width: 30px;
-    height: 30px;
-    color:rgb(2, 19, 19);
-    background-color: #141414;
+  .text-div {
     display: inline;
-    opacity: 0.5;
-    border: 1px solid rgb(216, 15, 15);
+    padding-bottom: 5px;
+  }
+  .checkbox1 {
+    width: 28px;
+    height: 28px;
+    color:rgb(2, 19, 19);
+    background: #141414;
+    display: inline;
+    opacity: 0.1;
+    border: 20px solid rgb(216, 15, 15);
   }
   .btn-save {
     display: inline;
-    height: 37px;
-    width: 90px;
+    height: 38px;
+    width: 97px;
     margin-right: 10px;
     font-weight: 600;
+    letter-spacing: 2px;
   }
   .btn-cancel {
     display: inline;
     height: 37px;
-    width: 120px;
+    width: 130px;
     margin-right: 10px;
     background-color: #141414;
     color: rgb(112, 107, 107);
     opacity: 0.9;
     border: 2px solid rgb(75, 75, 75);
+    letter-spacing: 2px;
   }
   .btn-delete {
     display: inline;
-    height: 37px;
+    height: 38px;
     width: 200px;
     border: 2px solid rgb(75, 75, 75);
     background-color: #141414;
     color: rgb(112, 107, 107);
     opacity: 0.9;
+    letter-spacing: 3px;
   }
   @media screen and (max-width: 1024px){
     .container-edit {
