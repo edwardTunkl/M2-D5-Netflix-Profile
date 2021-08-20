@@ -118,11 +118,17 @@ h5 {
     text-align: left;
     height: 25px;
     width: 100px;
-    padding-left: 10px;
     margin-top: 2px;
     margin-bottom: 7px;
+   
     
   }
+  .dropdown-language {
+    margin-left: 10px;
+    float: right;
+  }
+
+
   .btn-maturity {
     font-size: 11px;
     font-weight: bolder;
@@ -138,7 +144,7 @@ h5 {
   .btn-edit {
     width: 70px;
     height: 30px;
-    background-color: #141414;
+    background-color: hsl(0, 0%, 8%)
     border: 2px solid rgb(75, 75, 75);
     color: rgb(112, 107, 107);
     border-radius: 1px;
@@ -151,11 +157,12 @@ h5 {
   .maturity-text {
     font-size: 13px;
     font-weight: 600;
-    color: rgb(204, 201, 201);
+    color: hsl(0, 3%, 79%);
     padding-top: 10px; 
   }
   .autoplay-text {
     display: inline;
+    vertical-align: middle;
     font-size: 13px;
     color: whitesmoke;
     padding-left: 3px;padding-bottom: 15px

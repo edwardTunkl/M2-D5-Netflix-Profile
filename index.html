@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">TV Shows</a>
@@ -32,17 +32,17 @@
             <a class="nav-link" href="#">Recently Added</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My List</a>
+            <a class="nav-link" href="backOffice.html">BackOffice</a>
           </li>
           <li class="nav-item dropdown">
-            
-            </div>
           </li>
-          </ul>
+        </ul>     
+      </div>
+
+      <div>
           <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="16" height="16" fill="currentColor" class="bi bi-search navbar-dark" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
-          <div class="nav-text ml-3 ">KIDS</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill ml-3" viewBox="0 0 16 16">
             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
           </svg>
@@ -50,9 +50,6 @@
             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img class="ml-2" src="/assets/avatar.png" width=32px alt="Avatar">
             </button>
-            <div class="dropdown-menu">
-              ...
-            </div>
           </div>
       </div>
       
@@ -60,6 +57,7 @@
     </nav>
 
     <!------------------------------------------------------Second Nav bar --------------------------------------------------->
+    <div style="margin-left: 40px; margin-bottom: 20px;">
     <nav class="navbar navbar-expand-lg navbar-dark netflix-nav-dark pl-6">
       <a class="navbar-brand" href="#"><h3>TV Shows</h3></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,23 +80,29 @@
         </ul>
       </div>
     </nav>
+  </div>
     <!------------------------------------------------------End of Second Nav bar --------------------------------------------------->
-    <div>
-
-    </div>
     
     <div class="container-fluid netflix-nav-dark pl-lg-4 ">
-      <h6 class="sections">Trending Now</h6>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4">
-          <div class="col px-1"><img src="/assets/media/media1.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
-          <div class="col px-1"><img src="/assets/media/media15.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
-          <div class="col px-1"><img src="/assets/media/media17.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
-          <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
-
-          
+      <h4 class="sections">Action</h4>
+      <div class="row action-movies">
+        <div class="spinner-border text-light" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="col px-1"><img src="/assets/media/media1.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media15.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media17.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        <div class="col px-1"><img src="/assets/media/media18.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
+        
       </div>
-      <h6 class="sections">Watch Again</h6>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4">
+          
+      
+      <h4 class="sections">Comedy</h4>
+      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4 comedy-movies">
           <div class="col px-1"><img src="/assets/media/media20.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
           <div class="col px-1"><img src="/assets/media/media24.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
           <div class="col px-1"><img src="/assets/media/media27.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
@@ -106,15 +110,23 @@
 
           
       </div>
-      <h6 class="sections">New Releases</h6>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+      <h4 class="sections">Fantasy</h4>
+      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 fantasy-movies">
+          <div class="col px-1"><img src="/assets/media/media29.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
+          <div class="col px-1"><img src="/assets/media/media30.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
+          <div class="col px-1"><img src="/assets/media/media32.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
+          <div class="col px-1"><img src="/assets/media/media4.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
+      </div>
+      <h4 class="sections">Drama</h4>
+      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 drama-movies">
           <div class="col px-1"><img src="/assets/media/media29.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media30.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media32.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media4.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
       </div>
     </div>
-
+  </div>
+  
     
     <div class="container " style="max-width:700px"> 
         <div class="row ">
@@ -143,16 +155,161 @@
       </div>
      </div>
 
-    
+<script>
+     window.onload = () => {
+        loadActionMovies()
+        loadComedyMovies()
+        loadDramaMovies()
+        loadFantasyMovies()
+    } 
 
+      newActionMovies = document.querySelector(".action-movies")
+      newComedyMovies = document.querySelector(".comedy-movies")
+      newFantasyMovies = document.querySelector(".fantasy-movies")
+      newDramaMovies = document.querySelector(".drama-movies")
+
+      // const movieId = ""
+      // console.log(movieId)
+
+      //   const editFunction =  (id) => {
+
+      //     console.log(id)
+      //     const movieId = event.target.querySelector("div").value
+      //     console.log("THIS IS MOVIEID", movieId)
+
+      //     window.location.assign("backOffice.html?id="+ movieId)
+
+      //   }
+
+        const loadActionMovies = async () => {
+
+         try {
+            const response = await fetch("https://striveschool-api.herokuapp.com/api/movies/action", 
+            {
+            method: 'GET',    
+            headers: {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZjViYjJkNTI2MjAwMTViNmRjOTMiLCJpYXQiOjE2MjkyODc4NjcsImV4cCI6MTYzMDQ5NzQ2N30.HkhDkrIcH7q04AsuHParGAbLEKxc3bvsAnjh3DGfZIE"
+            }
+            })
+            let data = await response.json()
+            let recievedData = data
+            console.log(data)
+
+            newActionMovies.innerHTML = ""
+
+            for (a of recievedData) {
+            
+            const movieId = a._id
+            newActionMovies.innerHTML += `
+                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    </div>
+                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
+                   `
+            }
+        } catch (err) {
+            console.log("THIS IS ERROR",err);
+        } finally {
+            console.log("Hello, I`m the end!")
+         }
+        }
+
+        const loadComedyMovies = async () => {
+
+         try {
+            const response = await fetch("https://striveschool-api.herokuapp.com/api/movies/comedy", 
+            {
+            method: 'GET',    
+            headers: {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZjViYjJkNTI2MjAwMTViNmRjOTMiLCJpYXQiOjE2MjkyODc4NjcsImV4cCI6MTYzMDQ5NzQ2N30.HkhDkrIcH7q04AsuHParGAbLEKxc3bvsAnjh3DGfZIE"
+            }
+            })
+            let data = await response.json()
+            let recievedData = data
+            console.log(data)
+            newComedyMovies.innerHTML = ""
+
+            for (a of recievedData) {
+
+            newComedyMovies.innerHTML += `
+                    <div class="col-3 px-1 mb-2">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    </div>
+                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
+                  `
+            }
+        } catch (err) {
+            console.log("THIS IS ERROR",err);
+        } finally {
+            console.log("Hello, I`m the end!")
+         }
+        }
+        const loadDramaMovies = async () => {
+
+         try {
+            const response = await fetch("https://striveschool-api.herokuapp.com/api/movies/drama", 
+            {
+            method: 'GET',    
+            headers: {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZjViYjJkNTI2MjAwMTViNmRjOTMiLCJpYXQiOjE2MjkyODc4NjcsImV4cCI6MTYzMDQ5NzQ2N30.HkhDkrIcH7q04AsuHParGAbLEKxc3bvsAnjh3DGfZIE"
+            }
+            })
+            let data = await response.json()
+            let recievedData = data
+
+            newDramaMovies.innerHTML = ""
+
+            for (a of recievedData) {
+
+            newDramaMovies.innerHTML += `
+                    <div class="col-3 px-1 mb-2">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    </div>
+                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
+                  `
+            }
+            console.log(data)
+        } catch (err) {
+            console.log("THIS IS ERROR",err);
+        } finally {
+            console.log("Hello, I`m the end!")
+         }
+        }
+        const loadFantasyMovies = async () => {
+
+         try {
+            const response = await fetch("https://striveschool-api.herokuapp.com/api/movies/fantasy", 
+            {
+            method: 'GET',    
+            headers: {
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZjViYjJkNTI2MjAwMTViNmRjOTMiLCJpYXQiOjE2MjkyODc4NjcsImV4cCI6MTYzMDQ5NzQ2N30.HkhDkrIcH7q04AsuHParGAbLEKxc3bvsAnjh3DGfZIE"
+            }
+            })
+            let data = await response.json()
+            let recievedData = data
+            console.log(data)
+
+            newFantasyMovies.innerHTML = ""
+
+            for (a of recievedData) {
+
+            newFantasyMovies.innerHTML += `
+                    <div class="col-3 px-1 mb-2">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    </div>
+                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
+                  `
+            }
+        } catch (err) {
+            console.log("THIS IS ERROR",err);
+        } finally {
+            console.log("Hello, I`m the end!")
+         }
+        }
+
+
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
