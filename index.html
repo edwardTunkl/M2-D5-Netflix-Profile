@@ -168,19 +168,6 @@
       newFantasyMovies = document.querySelector(".fantasy-movies")
       newDramaMovies = document.querySelector(".drama-movies")
 
-      // const movieId = ""
-      // console.log(movieId)
-
-      //   const editFunction =  (id) => {
-
-      //     console.log(id)
-      //     const movieId = event.target.querySelector("div").value
-      //     console.log("THIS IS MOVIEID", movieId)
-
-      //     window.location.assign("backOffice.html?id="+ movieId)
-
-      //   }
-
         const loadActionMovies = async () => {
 
          try {
@@ -194,7 +181,7 @@
             let data = await response.json()
             let recievedData = data
             console.log(data)
-
+            console.log("This is Movie ID", recievedData._id)
             newActionMovies.innerHTML = ""
 
             for (a of recievedData) {
@@ -202,9 +189,9 @@
             const movieId = a._id
             newActionMovies.innerHTML += `
                     <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                      <a href="backOffice.html?id=${a._id}">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
                     </div>
-                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
                    `
             }
         } catch (err) {
@@ -232,10 +219,10 @@
             for (a of recievedData) {
 
             newComedyMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+                      <a href="backOffice.html?id=${a._id}">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
                     </div>
-                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
                   `
             }
         } catch (err) {
@@ -262,10 +249,10 @@
             for (a of recievedData) {
 
             newDramaMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+                      <a href="backOffice.html?id=${a._id}">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
                     </div>
-                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
                   `
             }
             console.log(data)
@@ -294,10 +281,10 @@
             for (a of recievedData) {
 
             newFantasyMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0" style="height: 150px; width: 80px;">
+                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+                      <a href="backOffice.html?id=${a._id}">
+                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
                     </div>
-                    <div><a href="backOffice.html?id=" + ${a._id}>EDIT</a></div>
                   `
             }
         } catch (err) {
