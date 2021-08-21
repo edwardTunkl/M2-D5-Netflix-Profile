@@ -65,8 +65,7 @@
           <textarea class="form-control" id="movieDescription" rows="3" placeholder="Description here..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" onclick="createMovies(event)">Submit</button>
-        <button type="submit" class="btn btn-success " onclick="editFunction()">Edit</button>
-        <button type="submit" class="btn btn-danger " onclick="deleteFunction()">Delete</button>
+        
       </form>
       </div>
     </div>
@@ -193,23 +192,24 @@
            } finally {
              console.log("Hi")
            }
+
            recievedAllMovieData = recievedActionData.concat(recievedComedyData).concat(recievedDramaData).concat(recievedFantasyData)
 
            console.log("THESE ARE ALL MOVIES",recievedAllMovieData)
            console.log("THIS IS TYPE OF MOVIE ID", typeof movieID)
            let movieIdToString = String(movieID)
 
-           selectedMovieData = recievedAllMovieData.filter((movieID) => {
+              selectedMovieData = recievedAllMovieData.filter((movieID) => {
+                    if (movieID._id === movieIdToString) {
+                           return true;
+                    }})
 
-            if (movieID._id === movieIdToString) {
-              return true;
-            }
-          })
-          console.log("THIS IS SELECTED", selectedMovieData)
+              console.log("THIS IS SELECTED", selectedMovieData)
 
+              if(movieID !== null ){
             
-          formContainer = document.querySelector(".form-container")
-          formContainer.innerHTML = `
+              formContainer = document.querySelector(".form-container")
+              formContainer.innerHTML = `
                       <div class="form-group">
                          <label for="movieName">Movie name</label>
                          <input type="text" class="form-control" id="movieName" value="${selectedMovieData[0].name}"" placeholder="Movie here...">
@@ -236,6 +236,8 @@
                        <button type="submit" class="btn btn-danger " onclick="deleteFunction(event)">Delete</button>
                          `
          }
+        }
+
 
 
 
