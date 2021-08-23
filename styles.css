@@ -63,9 +63,12 @@ padding: 0;
 .container-edit {
   position: relative;
   margin-left: 385px;
-  max-width: 480px;
-  
-  
+  max-width: 480px;  
+}
+
+.images {
+max-height: 80%;
+
 }
 .h1-profile {
   font-size: 52px;
@@ -144,7 +147,7 @@ h5 {
   .btn-edit {
     width: 70px;
     height: 30px;
-    background-color: hsl(0, 0%, 8%)
+    background-color: hsl(0, 0%, 8%);
     border: 2px solid rgb(75, 75, 75);
     color: rgb(112, 107, 107);
     border-radius: 1px;
@@ -215,3 +218,4 @@ h5 {
       margin: 0 auto;
     }
   }
+  

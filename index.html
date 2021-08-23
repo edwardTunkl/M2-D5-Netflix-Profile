@@ -102,7 +102,7 @@
           
       
       <h4 class="sections">Comedy</h4>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-4 comedy-movies">
+      <div class="row comedy-movies">
           <div class="col px-1"><img src="/assets/media/media20.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
           <div class="col px-1"><img src="/assets/media/media24.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
           <div class="col px-1"><img src="/assets/media/media27.jpg" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></div>
@@ -111,14 +111,14 @@
           
       </div>
       <h4 class="sections">Fantasy</h4>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 fantasy-movies">
+      <div class="row fantasy-movies">
           <div class="col px-1"><img src="/assets/media/media29.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media30.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media32.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media4.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
       </div>
       <h4 class="sections">Drama</h4>
-      <div class="row mx-n1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 drama-movies">
+      <div class="row drama-movies">
           <div class="col px-1"><img src="/assets/media/media29.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media30.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
           <div class="col px-1"><img src="/assets/media/media32.jpg" alt="Movie Image" class="w-100 img-fluid mb-6 "></div>
@@ -188,9 +188,9 @@
             
             const movieId = a._id
             newActionMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+                    <div class="col mb-2 px-0" onclick="editFunction(event)"> 
                       <a href="backOffice.html?id=${a._id}">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
+                      <img src="${a.imageUrl}" alt="Movie Image" class="images mb-2"></a>
                     </div>
                    `
             }
@@ -218,12 +218,12 @@
 
             for (a of recievedData) {
 
-            newComedyMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+            newComedyMovies.innerHTML +=  `
+                    <div class="col mb-2 px-0" onclick="editFunction(event)"> 
                       <a href="backOffice.html?id=${a._id}">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
+                      <img src="${a.imageUrl}" alt="Movie Image" class="images mb-2"></a>
                     </div>
-                  `
+                   `
             }
         } catch (err) {
             console.log("THIS IS ERROR",err);
@@ -248,12 +248,12 @@
 
             for (a of recievedData) {
 
-            newDramaMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+            newDramaMovies.innerHTML +=  `
+                    <div class="col mb-2 px-0" onclick="editFunction(event)"> 
                       <a href="backOffice.html?id=${a._id}">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
+                      <img src="${a.imageUrl}" alt="Movie Image" class="images mb-2"></a>
                     </div>
-                  `
+                   `
             }
             console.log(data)
         } catch (err) {
@@ -280,12 +280,12 @@
 
             for (a of recievedData) {
 
-            newFantasyMovies.innerHTML += `
-                    <div class="col-3 px-1 mb-2" onclick="editFunction(event)"> 
+            newFantasyMovies.innerHTML +=  `
+                    <div class="col mb-2 px-0" onclick="editFunction(event)"> 
                       <a href="backOffice.html?id=${a._id}">
-                      <img src="${a.imageUrl}" alt="Movie Image" class="w-100 img-fluid mb-2 mb-lg-0"></a>
+                      <img src="${a.imageUrl}" alt="Movie Image" class="images mb-2"></a>
                     </div>
-                  `
+                   `
             }
         } catch (err) {
             console.log("THIS IS ERROR",err);
